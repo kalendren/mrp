@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class ListedOperation extends Model
+{
+    use HasFactory;
+
+    protected $table = 'listedoperations';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'operation_name',
+        'process',
+        'workstation',
+        'standard_hours',
+    ];
+
+}

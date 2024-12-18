@@ -1,0 +1,449 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Flexbox-based Navigation */
+.tab-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Form Styling */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-container input[type="text"]{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-container input[type="date"],
+.input-container input[type="number"] {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="date"]:focus,
+.input-container input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.input-container input[readonly] {
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+
+/* Button Styling */
+button,
+.tab-button,
+.button-theme {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 16px;
+}
+
+button:hover,
+.tab-button:hover,
+.button-theme:hover {
+    background-color: #0056b3;
+}
+
+button:active,
+.tab-button:active,
+.button-theme:active {
+    transform: scale(0.98);
+}
+
+button:disabled,
+.button-theme:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Alerts */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-left: 5px solid #17a2b8;
+}
+
+/* Tab Content */
+.tab {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab.active {
+    display: block;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Consistent Button Color and Layout */
+.button-theme {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-theme:hover {
+    background-color: #45a049;
+}
+
+/* Container Alignment */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styling */
+.nav-links a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+}
+
+/* Input Field Focus Styling */
+.input-container input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Add custom styling for modern dropdown and form */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Dropdown button styling */
+.dropdown-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.input-container input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button-theme {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Apply a responsive grid layout for better view on mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+}
+
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Close button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tile Boxes */
+.tile-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+.tile-box {
+    width: 50%; /* Makes each tile take up almost half the width */
+    padding: 10px;
+    background-color: #9396d1 !important; /* Ensures background color is applied */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #124495 !important; /* Ensures border is applied */
+    box-sizing: border-box; /* Ensures padding and border are included in width/height calculation */
+}
+
+.tile-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tile-box p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #1f2ce1; /* Deep blue background */
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 25%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1f2ce1; /* Deep blue background */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-top: auto;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* About Us Section Styling */
+.about-us {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .tile-boxes {
+        flex-direction: column;
+    }
+
+    .tile-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 16px;
+        color: white; /* Set the font color of the footer text to white */
+        margin: 5px 0;
+        font-weight: 300;
+    }
+}
+
+textarea {
+    width: 25%; /* Matches your current width for consistency */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    resize: vertical; /* Allows users to resize the height */
+}
