@@ -1,0 +1,5 @@
+deployment:
+  branches:
+    master:
+      docroot: public_html  # Or the folder where your app is deployed (use public_html or a custom folder)
+      hook: deploy.sh       # Optional: if you have a deploy.sh script for additional deployment steps
